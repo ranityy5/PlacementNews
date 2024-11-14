@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Email</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <style>
+body {
+    background-color: #50586C;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Makes the body take up the full height of the viewport */
+}
+
+section {
+    width: 50vw; /* Set the section width to 50% of the viewport */
+    height: auto;
+    display: flex;
+    flex-direction: column; /* Ensures input elements are stacked vertically */
+    justify-content: center;
+    align-items: center; /* Centers the children elements horizontally */
+    background-color: #020202;
+    border-radius: 10px;
+    padding: 30px; /* Increases padding around content */
+    padding-top: 0px;
+    
+    /* Add black border */
+    border: 3px solid black; /* Thicker border for the section */
+    
+    /* Add box shadow */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5); /* Adds a stronger shadow */
+}
+
+h3 {
+    color: #DCE2F0;
+    margin: 0;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center; /* Ensures the title is centered */
+}
+
+input {
+    margin-top: 15px;
+    padding: 10px;
+    width: 50vw; /* Set the input width to 50% of the viewport */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center; /* Center the text inside the input */
+}
+
+.submit {
+    margin-top: 15px;
+    width: 50%; /* Set the width to 50% of the parent container */
+    background-color: #4CAF50; /* Adjust background color */
+    color: white;
+    cursor: pointer;
+    display: block; /* Ensures the button is treated as a block element */
+    margin-left: auto; /* Aligns to the right */
+    margin-right: auto; /* Centers horizontally */
+}
+
+.submit:hover {
+    background-color: #45a049; /* Hover effect for submit button */
+}
+
+    </style>
+</head>
+<body>
+    <div class="titleName">
+        <h1>Placement Update Logs</h1>
+    </div>
+    <section>
+        <h3>Enter Mail Id</h3>
+        <form action="store_email.php" method="post">
+            <input type="email" name="email" placeholder="Email Id" required>
+            <br>
+            <input type="submit" class="submit" value="Submit">
+        </form>
+    </section>
+    
+</body>
+</html>
